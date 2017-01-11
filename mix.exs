@@ -4,15 +4,15 @@ defmodule Extreme.Mixfile do
   def project do
     [app: :extreme,
      version: "0.7.1",
-     elixir: ">= 1.0.0 and ~> 1.3.0",
+     elixir: ">= 1.0.0 and ~> 1.4.0",
      source_url: "https://github.com/exponentially/extreme",
      description: """
      Elixir TCP adapter for EventStore.
      """,
-     package: package,
+     package: package(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps()]
   end
 
   def application do
